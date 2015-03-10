@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_road">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo" />
+
+
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_gravity="center|bottom"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+
+        <Button
+
+            android:layout_width="150dp"
+            android:layout_gravity="left|bottom"
+            android:layout_height="150dp"
+            android:drawableLeft="@drawable/plan_route"
+            android:drawablePadding="5dip"
+            android:text="Plan Route"
+            android:color="@color/brownish"
+            android:alpha="1000"
+            android:id="@+id/plRouteBtn"
+            android:onClick="sendMessage"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:alpha="10"
+            android:layout_gravity="right|bottom"
+            android:drawableLeft="@drawable/view_route"
+            android:drawablePadding="5dip"
+            android:text="View Route"
+            android:id="@+id/viewRouteBtn"
+            android:onClick="sendMessage"/>
+
+</LinearLayout>
+
+</LinearLayout>
