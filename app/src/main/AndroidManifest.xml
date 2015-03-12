@@ -28,14 +28,24 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+        </intent-filter>
+
+        </activity>
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDmyRa6BHGsxhlraBZikucctYEAt_7yioY"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-            android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyDmyRa6BHGsxhlraBZikucctYEAt_7yioY"/>
     </application>
 
 </manifest>
